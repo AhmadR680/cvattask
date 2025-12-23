@@ -117,6 +117,7 @@ INSTALLED_APPS = [
     "cvat.apps.redis_handler",
     "cvat.apps.consensus",
     "cvat.apps.access_tokens",
+    'cvat.apps.test',
 ]
 
 SITE_ID = 1

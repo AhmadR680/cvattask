@@ -44,6 +44,7 @@ import GlobalHotKeys, { KeyMap } from 'utils/mousetrap-react';
 import { ShortcutScope } from 'utils/enums';
 import { subKeyMap } from 'utils/component-subkeymap';
 import SettingsModal from './settings-modal/settings-modal';
+import { BarChartOutlined } from '@ant-design/icons';
 
 interface StateToProps {
     user: any;
@@ -304,6 +305,13 @@ function HeaderComponent(props: Props): JSX.Element {
             label: 'Admin page',
         }, 0]);
     }
+
+    menuItems.push([{
+        key: 'class-stats',
+        icon: <BarChartOutlined />,
+        onClick: () => history.push('/test/stats'),
+        label: 'Class Statistics',
+    }, 35]);
 
     menuItems.push([{
         key: 'profile',
